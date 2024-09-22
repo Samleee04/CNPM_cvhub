@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="vie">
+<head>
+<title>Nhập thông tin cho CV</title>
+<style>
+    .container{
+        display: flex;
+        align-items: flex-start ;
+        gap: 100px;
+        margin-left: 400px;
+    }
+    
+    .container1{
+        display: flex;
+        flex-direction: column; /* Căn chỉnh các phần tử theo chiều dọc */
+        align-items: flex-start ;
+        gap: 1s0px;
+        margin-left: 300px;
+        margin-bottom: 10px;
+    }
+    .container2{
+        display: flex;
+        align-items: flex-start ;
+        gap: 10
+        px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .container3{
+       
+        display: flex;
+        align-items: flex-start ;
+        gap: 60px;
+        margin-left: 850px;
+    }
+    .text
+    {
+        margin-bottom: 10px; 
+        width: 400px;
+    }
+    .khoangcach
+    {
+        margin-bottom: 10px;
+    
+    }
+    .header
+    {
+        color: cornflowerblue;   font-size: 120% ; font-family: 'Segoe UI';
+    }
+
+</style>
+</head>
+<body style="background-color:#f2f0f3 ;">
+<div style="background-color: lightskyblue; padding: 20; text-align: center; height:40px; margin-bottom: 10px;" > 
+<h1 style="color: white;  font-size: 160%;   font-family: 'Segoe UI';  text-align: center; vertical-align: middle;" >  
+      <img src="https://th.bing.com/th/id/OIP.MbOvkmJ28QOfTp_YW5jYQAHaHa?rs=1&pid=ImgDetMain" alt="logo" width="25px" height="25px"
+       style="margin-right: 10px;">
+     <b>THÔNG TIN HỒ SƠ CỦA BẠN</b>
+    </h1>
+</div>
+<div class="container">
+    <div>
+        <iframe src="" frameborder="1" width="120" height="160"  margin-right: 20px; style="background-color: white;"> </iframe> <br>   
+    <input type="button" value=" Upload" style="display: flex; margin-left: 25px; background-color: darkgrey;">
+    </div>
+    <div>
+        <h2 class="header">
+            Thông tin cá nhân :
+        </h2>
+        <div style="  margin-left: 10px;">
+            <label style="margin-bottom: 10px;">
+                Họ và tên: 
+                <input type="text" id="name" name="name"  style="margin-left: 30px;margin-bottom: 10px; width: 400px;">
+             </br>  
+            <label style=" margin-right: 20px; ">
+                Giới tính: 
+                <input type="radio" name="gender" style="margin-right: 5px; margin-left: 40px;"> 
+                <i> Nam </i>
+                 <input type="radio" name="gender"  style="margin-right: 5px;" >
+                 <i> Nữ  </i>
+            </label>
+            <label style="margin-left: 70px;">
+                Năm sinh 
+                <input type="date" name="date" id="date" style="margin-left: 10px;">
+            </br> 
+            <label class="khoangcach" style="margin-top: 10px;">
+                Nơi cư trú: 
+                <input type="text" id="address" name="address" class="text" style="margin-left: 25px; margin-top: 10px;"> 
+            </br>
+            <label class="khoangcach" >
+                Số điện thoại:  
+                <input type="text" id="sdt" name="sdt" class="text" style="margin-left: 7px;">
+            </br>
+            <label>
+                Email:  
+                <input type="text" id="Email" name="Email" class="text" style="margin-left: 54px;"> 
+            </br>
+        </div>
+       
+    </div>
+    
+</div>
+<div class="container1">   
+     <h2 class="header">
+           <b> Thông tin ứng tuyển </b> :
+    </h2>
+        <div style="margin-left: 10px;" >
+
+            <label style="margin-right: 30px; margin-bottom: 20px;">
+                Trình độ học vấn: 
+                <select name="level" id="level" style="margin-left: 50px; width: 200px; margin-bottom: 20px;">
+                    <option value="thpt">Trung Học Phổ Thông</option>
+                    <option value="daihoc"> Đại Học </option>
+                    <option value="thacsi"> Thạc Sĩ</option>
+                    <option value="tiensi"> Tiến Sĩ</option> 
+                </select>
+            </label>
+
+            <label style="margin-right: 30px;  margin-bottom: 20px;" >
+                Chuyên ngành:
+                <input type="text" id="chuyennganh" name="chuyennganh" style="width: 200px;">
+            </label>
+
+            <label style="margin-right: 30px;  margin-bottom: 20px;" >
+                Xếp loại: 
+                <select name="xeploai" id="xeploai" style="width: 120px;">
+                    <option value="trungbinh"> Trung Bình</option>
+                    <option value="kha"> Khá </option>
+                    <option value="gioi"> Giỏi</option>
+                    <option value="xuatsac"> Xuất Sắc</option> 
+                </select>
+            </br>
+
+            <label style="margin-right: 30px;">
+                Đơn vị đào tạo: 
+                <input type="text" id="dvdt" name="dvdt" style="width: 195px; margin-left: 64px;">
+            </label>
+
+            <label style="margin-right: 30px;">
+                Năm : 
+                <input type="text" id="namvao" name="namvao" style="width: 50px; margin-left: 55px; margin-right: 30px;">
+                <i>đến</i>
+                <input type="text" id="namvao" name="namvao" style="width: 50px; margin-left: 30px;">
+             </label>
+        </div>
+        <div class="container2">
+               <div>
+                <label style="margin-bottom: 20px;">
+                    Kinh nghiệm làm việc:
+                </br>
+                <textarea name="kinhnghien" id="kinhnghiem" style="width: 250px; height: 50px; box-sizing: border-box;margin-left: 170px; margin-bottom: 20px; " ></textarea>
+                </br>
+                <label style="margin-right: 30px;  margin-bottom: 20px;">
+                    Vị trí ứng tuyển:
+                    <input type="text" id="vitri" name="vitri" style="width: 240px;margin-left: 59px; margin-bottom: 20px; ">
+                </br>    
+
+                <label style="margin-right: 30px;  margin-bottom: 20px;">
+                    Mức lương mong muốn:
+                    <input type="number" name="luong" id="luong" style="margin-left: 10px;margin-bottom: 20px; width: 200px;">
+                    <i>(VND)</i>
+                </br>
+                <label style="margin-right: 30px;  margin-bottom: 20px;">
+                    Mục tiêu nghề nghiệp:
+                </br>
+                <textarea name="muctieu" id="muctieu" style="width: 250px; height: 50px; box-sizing: border-box;margin-left: 170px; margin-bottom: 20px; " ></textarea>
+            </div>
+            <div>
+                <label style="margin-right: 30px;  margin-bottom: 20px;">
+                    <button style="margin-right: 10px;">
+                        <img src="https://w7.pngwing.com/pngs/972/334/png-transparent-computer-icons-add-logo-desktop-wallpaper-add-thumbnail.png" alt="thêm" style="width: 10px; ">
+                    </button>
+                    Trình độ ngoại ngữ: 
+                            <select name="ngoaingu" id="ngoaingu" style="width: 90px; margin-bottom: 20px;" >
+                                <option value="tienganh"> Tiếng Anh</option>
+                                <option value="tiengtrung">Tiếng Trung</option>
+                                <option value="tiengnhat">Tiếng Nhật</option>
+                                <option value="tienghan">Tiếng Hàn</option>
+                                <option value="orther">*Khác</option>
+                            </select>
+                        
+                         <small> ( Chứng chỉ )</small>
+                            <select name="ccngoaingu" id="ccngoaingu" style="width: 80px; margin-bottom: 20px;">
+                                    <option value="toeic"> Toiec</option>
+                                    <option value="ielst">IELST</option>
+                                    <option value="hsk">HSK</option>
+                                    <option value="other">*Khác</option>
+                            </select>
+                </br>
+                <label style="margin-left: 42px;  margin-bottom: 20px;"> 
+                    Kỹ năng: 
+                </br>
+                <textarea name="kynang" id="kynang" style="width: 300px; height: 50px; box-sizing: border-box;margin-left: 120px; margin-bottom: 20px; " ></textarea>
+                <br>
+                <label style="margin-left: 42px;  margin-bottom: 20px;"> 
+                    Thông tin thêm: 
+                </br>
+                <textarea name="ttthem" id="ttthem" style="width: 300px; height: 50px; box-sizing: border-box;margin-left: 120px; margin-bottom: 20px; " ></textarea>
+            </div>
+         
+        </div>
+      
+</div>
+<div class="container3">
+    <button style="background-color: greenyellow; width: 100px;height: 30px; "><label> Tạo CV </label></button>
+    <button style="background-color:lightblue; width: 100px;height: 30px; "><label> Làm mới</label></button>
+    <button style="background-color:rgb(from color r g b); width: 100px;height: 30px; "><label > Quay Lại</label></button>
+</div>
+</body>
+</html>
